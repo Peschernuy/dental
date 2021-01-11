@@ -8,6 +8,53 @@
 
 
 
+.header{
+  &__top-container{
+    background-color: #fafafa;
+  }
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1400px;
+    &-text{
+      @extend %opensans-400;
+      font-size: 14px;
+      line-height: 50px;
+      color: #556f78;
+    }
+    &-phone{
+      @extend %opensans-400;
+      font-size: 14px;
+      line-height: 50px;
+      color: #556f78;
+    }
+    &-mail{
+      @extend %opensans-400;
+      font-size: 14px;
+      line-height: 50px;
+      color: #556f78;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
