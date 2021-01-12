@@ -16,24 +16,35 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1400px;
-    &-text{
+    max-width: 1140px;
+    &-adress{
+      display: flex;
+      align-content: center; 
       @extend %opensans-400;
       font-size: 14px;
       line-height: 50px;
       color: #556f78;
     }
-    &-phone{
+    &-phones{
+      display: flex;
       @extend %opensans-400;
       font-size: 14px;
       line-height: 50px;
       color: #556f78;
     }
     &-mail{
+      display: flex;
       @extend %opensans-400;
       font-size: 14px;
       line-height: 50px;
       color: #556f78;
+    }
+    &-svg{
+      display: block;
+      
+    }
+    &-social{
+      display: flex;
     }
   }
 }
