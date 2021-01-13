@@ -9,47 +9,146 @@
 
 
 .header{
-  &__top-container{
+  
+  &-top-container{
     background-color: #fafafa;
   }
-  &__top{
+  &-top{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1140px;
-    &-adress{
+    &__text{
+      span{
+        @extend %opensans-700;
+      }
+    }
+    &__adress{
       display: flex;
       align-content: center; 
-      @extend %opensans-400;
+      @extend %opensans-600;
       font-size: 14px;
       line-height: 50px;
       color: #556f78;
     }
-    &-phones{
+    &__phones{
       display: flex;
-      @extend %opensans-400;
+      @extend %opensans-600;
       font-size: 14px;
       line-height: 50px;
       color: #556f78;
     }
-    &-mail{
+    &__mail{
       display: flex;
-      @extend %opensans-400;
+      @extend %opensans-600;
       font-size: 14px;
       line-height: 50px;
       color: #556f78;
     }
-    &-svg{
-      display: block;
+    &__svg{
+      &-pointer{
+        margin-top: 13px;
+        margin-right: 3px;
+        margin-left: -10px;
+      }
+      &-phones{
+        margin-top: 11px;
+        margin-right: 3px;
+      }
+      &-mail{
+        margin-top: 13px;
+        margin-right: 3px;
+      }
+
       
     }
-    &-social{
+    &__social{
       display: flex;
+      &-btn{
+        background-color: #5894b0;
+        border: none;
+        @extend  %opensans-400;
+        font-size: 14px;
+        line-height: 50px;
+        color: #fff;
+        padding: 0 25px 0 25px;
+        margin-left: 10px;
+      }
+    }
+    &__link{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin:0 10px 0 10px;
+    }
+  }
+  &__inner{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  &__search{
+    &-svg{
+      margin-top: 15px;
     }
   }
 }
 
+.menu{
+  max-width: 670px;
+    width: 100%;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    &-arrow{
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        background-image: url('../images/icons/chevron-down.png');
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 6px;
+        top: 25px;
+        right: -20px;
+      }
+      
+    }
+    &-link{
+      @extend  %opensans-400;
+        font-size: 16px;
+        line-height: 50px;
+        color: #95adb4;
+        transition: all .3s;
+        &:hover{
+          color: #f3ae36;
+        }
+    }
+  }
+  
+}
 
+.video-dental{
+  &__popup{
+    width: 100%;
+    height: 530px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__play{
+    &:hover{
+      opacity: 80%;
+      transform: translateY(1px);
+    }
+  }
+  
+}
 
 
 
