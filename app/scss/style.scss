@@ -117,7 +117,7 @@
       
     }
     &-link{
-      @extend  %opensans-400;
+        @extend  %opensans-400;
         font-size: 16px;
         line-height: 50px;
         color: #95adb4;
@@ -152,9 +152,93 @@
 
 
 
+.services{
+  &__slider{
+    display: flex;
+    justify-content: space-between;
+    &-item{
+      padding: 70px 80px 100px 80px;
+      text-align: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 635px;
+      height: 540px;
+      position: relative;
+      
+    }
+  }
+  &__subtitle{
+        @extend  %opensans-400;
+        font-size: 24px;
+        line-height: 50px;
+        color: #fff;
+        text-transform: uppercase;
+        // margin-bottom: 30px;
+  }
+  &__title{
+        @extend  %opensans-700;
+        font-size: 50px;
+        line-height: 50px;
+        color: #fff;
+        margin-bottom: 55px;
+  }
+  &__text{
+        @extend  %opensans-600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #fff;
+        margin-bottom: 70px;
+  }
+  &__btn{
+        @extend  %opensans-600;
+        font-size: 16px;
+        color: #fff;
+        background-color: transparent;
+        border: solid 1px #fff;
+        padding: 20px 35px;
+        &:hover{
+          background-color: #5894b0;
+          border: none;
+        }
+      }
+
+}
 
 
+.slick-prev{
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  padding: 270px 25px;
+  background-image: url('../images/icons/prev-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  background-color: rgba(0, 0, 0, .1);
+ 
+   
+}
 
+.slick-next{
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 270px 25px;
+  background-image: url('../images/icons/next-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  background-color: rgba(0, 0, 0, .1);
+  
+ 
+}
+
+.slick-arrow {
+  font-size: 0;
+}
 
 
 
