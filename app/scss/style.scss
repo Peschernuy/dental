@@ -196,6 +196,8 @@
         background-color: transparent;
         border: solid 1px #fff;
         padding: 20px 35px;
+        outline: none;
+        transform: translateY(1px);
         &:hover{
           background-color: #5894b0;
           border: none;
@@ -245,6 +247,74 @@
 
 
 
+
+.about{
+  padding: 80px 380px;
+  text-align: center;
+  &__title{
+        @extend  %opensans-300;
+        font-size: 50px;
+        color: #808080;
+        margin-bottom: 50px;
+        span{
+          color: #6fa0b7;
+          @extend  %opensans-700;
+          font-size: 50px;
+        }
+  }
+  &__text{
+        @extend  %opensans-300;
+        font-size: 24px;
+        color: #8e8e8e;
+        margin-bottom: 30px;
+        span{
+        @extend  %opensans-400;
+        color: #8c8c8c;
+        position: relative;
+        }
+  }
+  &__btn{
+        @extend  %opensans-600;
+        font-size: 16px;
+        color: #fff;
+        border: solid 1px #fff;
+        padding: 20px 35px;
+        background-color: #5894b0;
+        border: none;
+        outline: none;
+        margin-top: 60px;
+         transform: translateY(1px);
+        }
+  }
+  
+.slick-dots{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  right: 50%;
+ 
+}
+.slick-dots button{
+  border-radius: 50%;
+  font-size: 0;
+  height: 12px;
+  width: 12px;
+  padding: 0;
+  border: solid 1px #c6c6c6;
+  margin: 0 5px;
+  outline: none;
+  background-color: #fff;
+  &:hover{
+    background-color: #6fa0b7;
+    border: none;
+  } 
+}
+
+.slick-active button{
+  background-color: #6fa0b7;
+  border: none;
+}
 
 
 

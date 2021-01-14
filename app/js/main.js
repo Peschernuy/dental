@@ -10,5 +10,15 @@ $(function(){
   
   });
 
+  $('.about__slider').slick({
+    draggable: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    arrows: false
+
+  });
+
 });
 
