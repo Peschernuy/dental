@@ -20,5 +20,15 @@ $(function(){
 
   });
 
+  $('.specialists__inner').slick({
+    draggable: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    infinite: true,
+    dots: true,
+    arrows: false
+
+  });
+
 });
 

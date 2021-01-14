@@ -197,7 +197,6 @@
         border: solid 1px #fff;
         padding: 20px 35px;
         outline: none;
-        transform: translateY(1px);
         &:hover{
           background-color: #5894b0;
           border: none;
@@ -277,7 +276,6 @@
         @extend  %opensans-600;
         font-size: 16px;
         color: #fff;
-        border: solid 1px #fff;
         padding: 20px 35px;
         background-color: #5894b0;
         border: none;
@@ -315,6 +313,89 @@
   background-color: #6fa0b7;
   border: none;
 }
+
+
+
+.specialists{
+  padding: 80px 380px 90px 380px;
+  background-image: url('../images/spec-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__inner{
+    display: flex;
+  }
+  &__title{
+    text-align: center;
+    @extend  %opensans-300;
+        font-size: 50px;
+        color: #808080;
+        margin-bottom: 50px;
+        span{
+          color: #fcbc4d;
+          @extend  %opensans-700;
+          font-size: 50px;
+        }
+
+  }
+  &__box{
+    height: 570px;
+    max-width: 360px;
+   text-align: center; 
+   background-color: #fff;
+   &-title{
+        @extend  %opensans-600;
+        font-size: 20px;
+        margin: 35px 0 12px 0;
+        color: #000000;
+   }
+   &-subtitle{
+     @extend  %opensans-600;
+        font-size: 16px;
+        color: #5894b0;
+        margin-bottom: 30px;
+   }
+   &-links{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+    max-width: 130px;
+    
+   }
+   &-link{
+   margin: 0 10px;
+   align-items: baseline;
+     
+   }
+   &-text{
+        @extend  %opensans-300;
+        font-size: 16px;
+        color: #999999;
+        max-width: 225px;
+        margin: 0 auto;
+        
+   }
+  }
+  &__btn{
+    @extend  %opensans-600;
+        font-size: 16px;
+        color: #000;
+        padding: 20px 35px;
+        background-color: transparent;
+        border: solid 1px #000;
+        outline: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
