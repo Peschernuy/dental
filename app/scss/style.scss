@@ -202,44 +202,46 @@
           border: none;
         }
       }
+      
+      .slick-prev{
+        border: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        padding: 270px 25px;
+        background-image: url('../images/icons/prev-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        background-color: rgba(0, 0, 0, .1);
+       
+         
+      }
+      
+      .slick-next{
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 270px 25px;
+        background-image: url('../images/icons/next-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        background-color: rgba(0, 0, 0, .1);
+        
+       
+      }
+      
+      .slick-arrow {
+        font-size: 0;
+      }
 
+
+      
 }
 
-
-.slick-prev{
-  border: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  padding: 270px 25px;
-  background-image: url('../images/icons/prev-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  outline: none;
-  background-color: rgba(0, 0, 0, .1);
- 
-   
-}
-
-.slick-next{
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 270px 25px;
-  background-image: url('../images/icons/next-arrow.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  outline: none;
-  background-color: rgba(0, 0, 0, .1);
-  
- 
-}
-
-.slick-arrow {
-  font-size: 0;
-}
 
 
 
@@ -283,46 +285,49 @@
         margin-top: 60px;
          transform: translateY(1px);
         }
+        .slick-dots{
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          left: 50%;
+          right: 50%;
+         
+        }
+        .slick-dots button{
+          border-radius: 50%;
+          font-size: 0;
+          height: 12px;
+          width: 12px;
+          padding: 0;
+          border: solid 1px #c6c6c6;
+          margin: 0 5px;
+          outline: none;
+          background-color: #fff;
+          &:hover{
+            background-color: #6fa0b7;
+            border: none;
+          } 
+        }
+        
+        .slick-active button{
+          background-color: #6fa0b7;
+          border: none;
+        }
   }
   
-.slick-dots{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  left: 50%;
-  right: 50%;
- 
-}
-.slick-dots button{
-  border-radius: 50%;
-  font-size: 0;
-  height: 12px;
-  width: 12px;
-  padding: 0;
-  border: solid 1px #c6c6c6;
-  margin: 0 5px;
-  outline: none;
-  background-color: #fff;
-  &:hover{
-    background-color: #6fa0b7;
-    border: none;
-  } 
-}
-
-.slick-active button{
-  background-color: #6fa0b7;
-  border: none;
-}
 
 
 
 .specialists{
-  padding: 80px 380px 90px 380px;
+  padding: 80px 0px 90px 0px;
   background-image: url('../images/spec-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   &__inner{
     display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
   }
   &__title{
     text-align: center;
@@ -384,7 +389,42 @@
         background-color: transparent;
         border: solid 1px #000;
         outline: none;
+        margin-top: 100px;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+        
   }
+  
+  .slick-dots{
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          left: 50%;
+          right: 50%;
+         bottom: 0;
+         margin-bottom: -50px;
+        }
+        .slick-dots button{
+          border-radius: 50%;
+          font-size: 0;
+          height: 12px;
+          width: 12px;
+          padding: 0;
+          border: solid 1px #c6c6c6;
+          margin: 0 5px;
+          outline: none;
+          background-color: #fff;
+          &:hover{
+            background-color: #6fa0b7;
+            border: none;
+          } 
+        }
+        
+        .slick-active button{
+          background-color: #6fa0b7;
+          border: none;
+        }
 }
 
 
