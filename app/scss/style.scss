@@ -188,6 +188,7 @@
         line-height: 30px;
         color: #fff;
         margin-bottom: 70px;
+     
   }
   &__btn{
         @extend  %opensans-600;
@@ -197,6 +198,7 @@
         border: solid 1px #fff;
         padding: 20px 35px;
         outline: none;
+        cursor: pointer;
         &:hover{
           background-color: #5894b0;
           border: none;
@@ -284,6 +286,7 @@
         outline: none;
         margin-top: 60px;
          transform: translateY(1px);
+         cursor: pointer;
         }
         .slick-dots{
           position: absolute;
@@ -393,6 +396,7 @@
         display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
         
   }
   
@@ -430,7 +434,150 @@
 
 
 
+.advantages{
+  background-image: url('../images/advantages-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__slider{
+    padding: 80px 0 190px 0;
+    display: block;
+    max-width: 720px;
+    margin-left: 40%;
 
+    
+  }
+
+  &__title{
+    @extend  %opensans-700;
+    font-size: 50px;
+    line-height: 30px;
+    color: #3a3a3a;
+    margin-bottom: 50px;
+  }
+  &__text{
+    @extend  %opensans-400;
+    font-size: 28px;
+    line-height: 40px;
+    color: #3f3f3f;
+    margin-bottom: 50px;
+    span{
+      @extend  %opensans-700;
+    }
+  }
+  &__item{
+    &-title{
+      @extend  %opensans-700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #3f3f3f;
+    margin-bottom: 23px;
+    position: relative;
+    padding-left: 100px;
+    
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url('../images/cross.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 72px;
+      width: 72px;
+
+      left: 0px;
+    }
+    }
+    &-title-2{
+      @extend  %opensans-700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #3f3f3f;
+    margin-bottom: 23px;
+    position: relative;
+    padding-left: 100px;
+
+    &::before{
+      position: absolute;
+      content: '';
+      background-image: url('../images/tooth.png');
+      background-repeat: no-repeat;
+      height: 72px;
+      width: 72px;
+      left: 0px;
+    }
+    }
+    &-text{
+      @extend  %opensans-600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #3a3a3a;
+    margin-bottom: 40px;
+    padding-left: 100px;
+    }
+    &-text-2{
+      @extend  %opensans-600;
+    font-size: 16px;
+    line-height: 30px;
+    color: #3a3a3a;
+    padding-left: 100px;
+    position: relative;
+    }
+  }
+  &__btn{
+    position: absolute;
+        @extend  %opensans-600;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 35px;
+        background-color: #5894b0;
+        border: none;
+        outline: none;
+        height: 60px;
+        width: 195px;
+        display: block;
+        cursor: pointer;
+        margin-top: -150px;
+        margin-left: 40%;
+
+
+
+  }
+
+.slick-dots{
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          right: 55%;
+         bottom: 0;
+         margin-bottom: 115px;
+        }
+        .slick-dots button{
+          border-radius: 50%;
+          font-size: 0;
+          height: 12px;
+          width: 12px;
+          padding: 0;
+          border: solid 1px #c6c6c6;
+          margin: 0 5px;
+          outline: none;
+          background-color: #fff;
+          &:hover{
+            background-color: #6fa0b7;
+            border: none;
+          } 
+        }
+        
+        .slick-active button{
+          background-color: #6fa0b7;
+          border: none;
+        }
+
+
+
+
+
+}
 
 
 
