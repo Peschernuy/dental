@@ -157,7 +157,7 @@
     display: flex;
     justify-content: space-between;
     &-item{
-      padding: 70px 80px 100px 80px;
+      padding: 70px 80px 0px 80px;
       text-align: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -516,7 +516,7 @@
     padding-left: 100px;
     }
     &-text-2{
-      @extend  %opensans-600;
+    @extend  %opensans-600;
     font-size: 16px;
     line-height: 30px;
     color: #3a3a3a;
@@ -544,7 +544,7 @@
 
   }
 
-.slick-dots{
+      .slick-dots{
           position: absolute;
           display: flex;
           justify-content: center;
@@ -572,23 +572,294 @@
           background-color: #6fa0b7;
           border: none;
         }
+}
+
+
+.examples{
+  padding-top: 60px;
+  &__title{
+    text-align: center;
+    @extend  %opensans-300;
+        font-size: 50px;
+        color: #808080;
+        margin-bottom: 50px;
+        span{
+          color: #6fa0b7;
+          @extend  %opensans-700;
+          font-size: 50px;
+        }
+  }
+
+  &__item{
+    min-height: 420px;
+    &:hover{
+       background: #000;
+    }
+  }
+
+  &__box{
+    display: block;
+    max-width: 260px;
+    margin: 300px auto 0;
+    text-align: center;
+    opacity: 0;
+ 
+    &:hover{
+      opacity: 1;
+    }
+    &-title{
+    @extend  %opensans-700;
+    font-size: 24px;
+    line-height: 50px;
+    color: #ffffff;
+    }
+    &-text{
+    @extend  %opensans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+    }
+  }
 
 
 
 
-
+  .slick-prev{
+        border: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        padding: 210px 25px;
+        background-image: url('../images/icons/prev-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        background-color: rgba(0, 0, 0, .1); 
+      }
+      
+      .slick-next{
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 210px 25px;
+        background-image: url('../images/icons/next-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        background-color: rgba(0, 0, 0, .1);
+      }
+      
+      .slick-arrow {
+        font-size: 0;
+      }
 }
 
 
 
+.test{
+  background-image: url('../images/test-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+
+  &__title{
+     text-align: center;
+      @extend  %opensans-300;
+      font-size: 50px;
+      color: #808080;
+       padding-top: 80px;
+       margin-bottom: 50px;
+      span{
+         color: #f6b26f;
+         @extend  %opensans-700;
+        font-size: 50px;
+        }
+  }
+  &__form-box{
+    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   max-width: 635px;
+   width: 100%
+  }
+  &__input{
+    display: block;
+    padding: 20px 25px;
+    border: solid 1px #d0d0d0;
+    background-color: transparent;
+    margin-bottom: 10px;
+    @extend  %opensans-400;
+    font-size: 16px;
+    color: #3a3a3a;
+  }
+  &__select{
+    display: block;
+    padding: 20px 25px;
+    border: solid 1px #d0d0d0;
+    background-color: transparent;
+    margin-bottom: 10px;
+    @extend  %opensans-400;
+    font-size: 16px;
+    color: #3a3a3a;
+    span{
+      @extend  %opensans-400;
+    font-size: 16px;
+    color: #3a3a3a;
+    }
+  }
+  &__textarea{
+    display: block;
+    padding: 20px 25px;
+    border: solid 1px #d0d0d0;
+    background-color: transparent;
+    margin-bottom: 40px;
+    min-height: 120px;
+    resize: none;
+    @extend  %opensans-400;
+    font-size: 16px;
+    color: #3a3a3a;
+  }
+  &__btn{
+        @extend  %opensans-600;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px 35px;
+        background-color: #5894b0;
+        border: none;
+        outline: none;
+        height: 60px;
+        width: 230px;
+        display: block;
+        cursor: pointer;
+        margin: 0 auto;
+  } 
+}
 
 
+.map{
+  background-image: url('../images/map-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 835px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 110px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__contacts{
+    background-color: #f5ad55;
+    padding: 60px 65px 70px 55px;
+    max-width: 370px;
+   &-title{
+     @extend %opensans-700;
+     font-size: 28px;
+     color: #fff;
+     margin-bottom: 40px;
+   }
+   &-destination{
+     @extend %opensans-600;
+     font-size: 16px;
+     color: #fff;
+     margin-bottom: 30px;
+   }
+   &-mail{
+     @extend %opensans-600;
+     font-size: 16px;
+     color: #fff;
+     margin-bottom: 20px;
+   }
+   &-phones{
+     @extend %opensans-600;
+     font-size: 16px;
+     color: #fff;
+     margin-bottom: 10px;
+     &-last{
+       @extend %opensans-600;
+       font-size: 16px;
+       color: #fff;
+       margin-bottom: 30px;
+     }
+   }
+   &-hours{
+     @extend %opensans-600;
+     font-size: 16px;
+     color: #fff;
+   }
+  }
+
+  &__clinic{
+    background-image: url('../images/clinic-bg.png');
+    background-repeat: no-repeat;
+    height: 180px;
+    width: 270px;
+    position: relative;
+    display: block;
+    margin-right: 70px;
+    margin-top: 96px;
+
+    &::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/clinic-icon.png');
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 51px;
+    bottom: -43px;
+    left: 110px;
+  }
+    
+    &-title{
+      text-align: center;
+      @extend  %opensans-300;
+      font-size: 28px;
+      color: #808080;
+      margin: 20px 0;
+      span{
+         color: #f6b26f;
+         @extend  %opensans-700;
+        font-size: 28px;
+        }
+    }
+    &-text{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      @extend  %opensans-600;
+      font-size: 18px;
+      color: #6fa0b7;
+      max-width: 180px;
+    }
+  }
+}
 
 
+.footer{
+  text-align: center;
+  padding: 50px 0;
+  background-color: #6a9eb7;
+  opacity: 0.9;
+  margin-top: -180px;
+  &__title{
+    @extend  %opensans-300;
+      font-size: 34px;
+      color: #fff;
+      margin-bottom: 20px;
+      span{
+         @extend  %opensans-700;
 
-
-
-
+        }
+  }
+  &__text{
+    @extend  %opensans-400;
+      font-size: 16px;
+      color: #fff;
+  }
+}
 
 
 
