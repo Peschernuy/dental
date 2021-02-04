@@ -94,15 +94,20 @@
     &-svg{
       margin-top: 15px;
     }
+    cursor: pointer;
   }
 }
 
 .menu{
   max-width: 670px;
     width: 100%;
+  &__btn{
+    display: none;
+  }
   &__list{
     display: flex;
     justify-content: space-between;
+    
     &-arrow{
       position: relative;
       &::after{
@@ -220,7 +225,7 @@
         background-position: center;
         outline: none;
         background-color: rgba(0, 0, 0, .1);
-       
+        cursor: pointer;
          
       }
       
@@ -235,7 +240,7 @@
         background-position: center;
         outline: none;
         background-color: rgba(0, 0, 0, .1);
-        
+        cursor: pointer;
        
       }
       
@@ -255,8 +260,14 @@
 
 
 .about{
-  padding: 80px 380px;
+  padding: 80px 0 80px 0;
   text-align: center;
+  &__slider{
+    max-width: 1130px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
   &__title{
         @extend  %opensans-300;
         font-size: 50px;
@@ -604,7 +615,8 @@
 
   &__box{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: center;
     background-color: #000;
     max-width: 636px;
     min-height: 420px;
@@ -645,6 +657,7 @@
         background-position: center;
         outline: none;
         background-color: rgba(0, 0, 0, .1); 
+        cursor: pointer;
       }
       
       .slick-next{
@@ -658,6 +671,7 @@
         background-position: center;
         outline: none;
         background-color: rgba(0, 0, 0, .1);
+        cursor: pointer;
       }
       
       .slick-arrow {
@@ -702,6 +716,7 @@
     @extend  %opensans-400;
     font-size: 16px;
     color: #3a3a3a;
+    outline: none;
   }
   &__select{
     display: block;
@@ -712,6 +727,7 @@
     @extend  %opensans-400;
     font-size: 16px;
     color: #3a3a3a;
+    outline: none;
     span{
       @extend  %opensans-400;
     font-size: 16px;
@@ -729,6 +745,7 @@
     @extend  %opensans-400;
     font-size: 16px;
     color: #3a3a3a;
+    outline: none;
   }
   &__btn{
         @extend  %opensans-600;
