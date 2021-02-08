@@ -78,8 +78,25 @@ $(function(){
   $('.examples__slider').slick({
     draggable: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     infinite: true,
+    rows:0,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+
+        }
+      },
+      {
+        breakpoint: 660,
+        settings: {
+          slidesToShow: 1,
+
+        }
+      },
+    ]
 
   });
   

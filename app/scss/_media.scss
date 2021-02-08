@@ -24,6 +24,20 @@
       font-size: 15px;
     }
   }
+  .advantages{
+    background-color: #f8de6c;
+    background-image: none;
+    &__slider{
+      margin: 0 auto;
+    }
+    &__btn{
+      margin-top: -100px;
+    }
+    .slick-dots{
+      right: 45%;
+      margin-bottom: 130px;
+    }
+  }
 }
 
 @media(max-width: 1110px){
@@ -34,6 +48,17 @@
   }
 }
 
+@media(max-width: 1110px){
+  .map{
+    &__clinic{
+      display: none;
+    }
+    &__contacts{
+      margin: 0 auto;
+
+    }
+  }
+}
 
 
 @media(max-width: 900px){
@@ -104,8 +129,92 @@
       font-size: 20px;
     }
   }
+  .test{
+    &__title{
+      font-size: 40px;
+      span{
+        font-size: 40px;
+      }
+    }
+    &__text{
+      font-size: 20px;
+    }
+  }
+  .specialists{
+    &__title{
+      font-size: 40px;
+      span{
+        font-size: 40px;
+      }
+    }
+  }
+  .advantages{
+    &__title{
+      font-size: 40px;
+      span{
+        font-size: 40px;
+      }
+    }
+    &__text{
+      font-size: 24px;
+    }
+  }
+  .examples{
+    &__title{
+      font-size: 40px;
+      span{
+        font-size: 40px;
+      }
+    }
+  }
 }
  
+
+@media(max-width: 750px){
+
+  .advantages{
+    &__inner{
+      padding: 0 10px;
+    }
+    &__title{
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+    &__text{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    &__item{
+      &-title{
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 18px;
+      }
+      &-text{
+        font-size: 14px;
+      }
+      &-title-2{
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 18px;
+      }
+      &-text-2{
+        font-size: 14px;
+      }
+    }
+    &__btn{
+      right: 30%;
+      
+    }
+    .slick-dots{
+      right: 50%;
+      left: 50%;
+      margin-bottom: 130px;
+    }
+  }
+}
+
+
 
 @media(max-width: 560px){
   .about{
@@ -122,6 +231,79 @@
   .specialists{
     &__title{
       font-size: 30px;
+      span{
+        font-size: 30px;
+      }
+    }
+  }
+  .examples{
+    &__title{
+      font-size: 30px;
+      span{
+        font-size: 30px;
+      }
+    }
+  }
+
+  .advantages{
+    &__title{
+      font-size: 30px;
+      line-height: 30px;
+    }
+    &__text{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__item{
+      &-title{
+        font-size: 18px;
+        padding-left: 0;
+        &::before{
+          display: none;
+        }
+      }
+      &-text{
+        font-size: 14px;
+        padding-left: 0;
+      }
+      &-title-2{
+        font-size: 18px;
+        padding-left: 0;
+        &::before{
+          display: none;
+        }
+      }
+      &-text-2{
+        font-size: 14px;
+        padding-left: 0;
+      }
+    }
+    
+    &__btn{
+      right: 20%;
+    }
+  }
+  .test{
+    &__title{
+      font-size: 30px;
+      padding-top: 40px;
+      span{
+        font-size: 30px;
+      }
+    }
+    &__form-box{
+      padding: 0 10px;
+    }
+  }
+  .map{
+    &__contacts{
+      padding: 60px 40px 70px 40px;
+    }
+  }
+  .footer{
+    &__title{
+      font-size: 30px;
+      padding-top: 40px;
       span{
         font-size: 30px;
       }
