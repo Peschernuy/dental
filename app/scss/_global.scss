@@ -1,8 +1,9 @@
-// html,
-// body{
-//   height: 100%;
+html,
+body{
+  height: 100%;
+  scroll-behavior: smooth;
 
-// }
+}
 
 // body{
 //   display: flex;
@@ -14,8 +15,8 @@
 //   flex-grow: 1;
 // }
 
-// .container{
-//   max-width: 1770px;
-//   margin: 0 auto;
-// }
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
