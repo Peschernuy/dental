@@ -111,16 +111,7 @@
     
     &-arrow{
       position: relative;
-      &::after{
-        content: '';
-        position: absolute;
-        background-image: url('../images/icons/chevron-down.png');
-        background-repeat: no-repeat;
-        width: 10px;
-        height: 6px;
-        top: 25px;
-        right: -20px;
-      }
+      
       
     }
     &-link{
@@ -383,14 +374,14 @@
      @extend  %opensans-600;
         font-size: 16px;
         color: #5894b0;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
    }
    &-links{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     max-width: 130px;
     
    }
@@ -495,7 +486,7 @@
     font-size: 20px;
     line-height: 36px;
     color: #3f3f3f;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 100px;
     
@@ -517,7 +508,7 @@
     font-size: 20px;
     line-height: 36px;
     color: #3f3f3f;
-    margin-bottom: 23px;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 100px;
 
